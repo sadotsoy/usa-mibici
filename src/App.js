@@ -1,10 +1,13 @@
 import React from 'react';
-import './App.css';
+import StationsList from './components/Stations/StationsList';
+import './theme/App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">usa mibici</header>
+      <div className="content">
+        <StationsList />
+      </div>
     </div>
   );
 }
