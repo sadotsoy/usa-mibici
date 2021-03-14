@@ -7,11 +7,12 @@
     "plugin:react/recommended"
   ],
   "env": {
-    "es6": true,
-    "node": true,
     "browser": true,
     "commonjs": true,
-    "jest": true
+    "es2021": true,
+    "es6": true,
+    "jest": true,
+    "node": true,
   },
   "parser": "babel-eslint",
   "parserOptions": {
@@ -19,7 +20,7 @@
       "jsx": true,
       "modules": true
     },
-    "ecmaVersion": 6,
+    "ecmaVersion": 12,
     "sourceType": "module"
   },
   "settings": {
@@ -28,8 +29,11 @@
     }
   },
   "rules": {
-    "prettier/prettier": "error",
-    "no-console": "error",
+    "prettier/prettier": ["error", {
+        "printWidth": 120,
+        "singleQuote": true,
+        "arrowParens": "always",
+      }],
     "semi": ["error", "always"],
     "prefer-const": [
       "error",
@@ -38,9 +42,10 @@
         "ignoreReadBeforeAssign": false
       }
     ],
+    "no-unused-vars": "error",
     "quotes": [2, "single", { "avoidEscape": true }],
-    "react/prop-types": [2],
+    "react-hooks/exhaustive-deps": "warn",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react/prop-types": [2],
   }
 }
