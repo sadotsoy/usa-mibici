@@ -1,3 +1,6 @@
+/* imports */
+@import './utils/colors.css';
+
 /* RESET */
 * {
   margin: 0;

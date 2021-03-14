@@ -1,0 +1,16 @@
+.station-card-container {
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 32px 16px;
+}
+
+.station-card-container:hover {
+  border: 1px solid green;
+}
+
+.station-card-header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid red;
+}
