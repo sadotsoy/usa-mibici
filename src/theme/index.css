@@ -1,0 +1,8 @@
+/* imports */
+@import './utils/colors.css';
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
